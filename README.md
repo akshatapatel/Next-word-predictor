@@ -6,7 +6,6 @@ sentiment for multiple restaurant. We have employed Naive Bayes approach for thi
 The various libraries used are:
 ●	Pandas: Used to read the csv file.
 ●	Nltk (Natural Language tool kit) : to remove unimportant/unnecessary words from the dataset.
-
 The various functions of python employed are:
 ●	Reviews are extracted from the HTML or XML files using the BeautifulSoup library.
 example = BeautifulSoup(Text,"lxml")
