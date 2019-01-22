@@ -13,18 +13,25 @@ The various libraries used are:
 The various functions of python employed are:
 
 •	Reviews are extracted from the HTML or XML files using the BeautifulSoup library.
+
 example = BeautifulSoup(Text,"lxml")
+
 Text=example.get_text();
 
 •	Punctuations are removed from the reviews using the string substitution operation.
+
 Text= re.sub("[^a-zA-Z]"," ",Text);
 
 •	The entire review is split into an array consisting of its words as individual elements.
+
 lower_case = Text.lower()
+
 tempwords = lower_case.split()
 
 •	To split the text into pairs of words(bigrams)
+
 warr.append(Text)
+
 bigrams = [b for l in warr for b in zip(l.split(' ')[:-1], l.split(' ')[1:])]
 
 
